@@ -1,26 +1,22 @@
 'use client'
 
 import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
-import { Services } from '@/components/Services'
-import { Portfolio } from '@/components/Portfolio'
-import { About } from '@/components/About'
-import { Testimonials } from '@/components/Testimonials'
-import { Contact } from '@/components/Contact'
 import { Footer } from '@/components/Footer'
-import { BackgroundAnimation } from '@/components/BackgroundAnimation'
+import { HeroSection } from '@/components/sections/HeroSection'
+import { ServicesSection } from '@/components/sections/ServicesSection'
+import { ProcessSection } from '@/components/sections/ProcessSection'
+import { CasesSection } from '@/components/sections/CasesSection'
+import { CTASection } from '@/components/sections/CTASection'
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen">
-      <BackgroundAnimation />
+    <main className="relative min-h-screen noise">
       <Header />
-      <Hero />
-      <Services />
-      <Portfolio />
-      <About />
-      <Testimonials />
-      <Contact />
+      <HeroSection />
+      <ServicesSection />
+      <ProcessSection />
+      <CasesSection />
+      <CTASection />
       <Footer />
     </main>
   )
